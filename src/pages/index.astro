@@ -1,8 +1,10 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Hero from "../components/Hero.astro";
 const pageTitle = "Astro Test Site 1 Home"
 ---
 
-<BaseLayout pageTitle={pageTitle}>
+<BaseLayout pageTitle={pageTitle} isHomePage={true}>
+<Hero title="Astro Test Site" subtitle="Welcome to our amazing blog platform" />
 <h2>asp</h2>
 </BaseLayout>
