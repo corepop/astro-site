@@ -1,63 +1,8 @@
 ---
-const pageTitle = "Astro Test Site";
-import "../styles/global.css";
+import BaseLayout from "../layouts/BaseLayout.astro";
+const pageTitle = "Astro Test Site 1 Home"
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{pageTitle}</title>
-  </head>
-  <body>
-    <a href="/">Home</a>
-    <a href="./about/">About</a>
-    <a href="./blog/">Blog</a>
-
-    <h1>{pageTitle}</h1>
-
-    <section class="portfolio">
-      <h2>Portfolio</h2>
-      <div class="grid">
-        <img
-          src="https://preview.redd.it/fbc2zgggetnf1.jpg?width=640&crop=smart&auto=webp&s=9177c1f169244537b1cb951dee6680f73e42552a"
-          alt="Portfolio Image 1"
-        />
-        <img
-          src="https://preview.redd.it/fbc2zgggetnf1.jpg?width=640&crop=smart&auto=webp&s=9177c1f169244537b1cb951dee6680f73e42552a"
-          alt="Portfolio Image 2"
-        />
-        <img
-          src="https://preview.redd.it/fbc2zgggetnf1.jpg?width=640&crop=smart&auto=webp&s=9177c1f169244537b1cb951dee6680f73e42552a"
-          alt="Portfolio Image 3"
-        />
-        <img
-          src="https://preview.redd.it/fbc2zgggetnf1.jpg?width=640&crop=smart&auto=webp&s=9177c1f169244537b1cb951dee6680f73e42552a"
-          alt="Portfolio Image 4"
-        />
-        <img
-          src="https://preview.redd.it/fbc2zgggetnf1.jpg?width=640&crop=smart&auto=webp&s=9177c1f169244537b1cb951dee6680f73e42552a"
-          alt="Portfolio Image 5"
-        />
-        <img
-          src="https://preview.redd.it/fbc2zgggetnf1.jpg?width=640&crop=smart&auto=webp&s=9177c1f169244537b1cb951dee6680f73e42552a"
-          alt="Portfolio Image 6"
-        />
-        <img
-          src="https://preview.redd.it/fbc2zgggetnf1.jpg?width=640&crop=smart&auto=webp&s=9177c1f169244537b1cb951dee6680f73e42552a"
-          alt="Portfolio Image 7"
-        />
-        <img
-          src="https://preview.redd.it/fbc2zgggetnf1.jpg?width=640&crop=smart&auto=webp&s=9177c1f169244537b1cb951dee6680f73e42552a"
-          alt="Portfolio Image 8"
-        />
-        <img
-          src="https://preview.redd.it/fbc2zgggetnf1.jpg?width=640&crop=smart&auto=webp&s=9177c1f169244537b1cb951dee6680f73e42552a"
-          alt="Portfolio Image 9"
-        />
-      </div>
-    </section>
-  </body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+<h2>asp</h2>
+</BaseLayout>
