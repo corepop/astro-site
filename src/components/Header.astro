@@ -1,10 +1,11 @@
 ---
 import Navigation from "./Navigation.astro";
 import Hamburger from "./Hamburger.astro";
+import ThemeIcon from "./ThemeIcon.astro";
 const { isHomePage = false } = Astro.props;
 ---
 
-<header class={`floating-header ${isHomePage ? "homepage-header" : ""}`}>
+<header class:list={["floating-header", { "homepage-header": isHomePage }]}>
   <nav>
     <Hamburger />
     <Navigation />
